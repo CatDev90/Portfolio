@@ -1,0 +1,32 @@
+/* ------NavBar------*/
+.navbar{
+    background-color:rgb(97, 102, 84)!important;
+}
+
+.navbar-nav{
+    margin-left:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-nav .navitem{
+    margin-right:60px;
+}
+
+.nav-link{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+
+.btn .btn-outline-success{
+    font-weight:700;
+}
+
+.container-fluid{
+    background-color: grey;
+}
+
+/* ---Colour ---> */
+.offwhite{
+    background-color: rgb(154, 160, 173);
+}
