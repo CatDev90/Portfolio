@@ -3,111 +3,210 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Portfolio</title>
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+          <a href="#" class="navbar-brand" ><i class="bi-person"></i> Portfolio </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu" aria-controls="navmenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item px-3">
+                <a class="nav-link text-light" href="#Home">Top of the page</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+              <li class="nav-item px-3">
+                <a class="nav-link text-light" href="#Skills">Skills & Tools</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tools & Skills</a>
+              <li class="nav-item px-3">
+                <a class="nav-link text-light" href="#Contact">Contacts</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Random 1</a></li>
-                  <li><a class="dropdown-item" href="#">Random 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Random 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true"></a>
+              <li class="nav-item px-3">
+                <a class="nav-link text-light" href="#" src="chatApp/index.html">Chat</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
           </div>
         </div>
       </nav>
 
       <!-- About Me -->
+
+    <section id="Home" class="p-5">
       <div class="container">
-        <div class="row">
-            <div class="col">
-                <h6 class="fw-bold">ABOUT ME</h6>
-                <h5 class="display-5 mb-5">Catherine</h5>
+     <div class="row align align-items-center justify-content-center">
+      <div class="col-md">
+        <h4 class="display-6 p-2 mt-4">Catherine Devlin</h4>
+      </div> 
+
+      <div class="row">
+        <div class="col-md-6 pt-2">
+        <img src="Ziggy.jpg" class="img-fluid rounded" alt="My cat">
         </div>
-      </div>
-        <div class="row">
-            <div class="col-md-3>">
-            <img src="Ziggy.jpg" class="w-50" alt="My cat">
-         <p>This is my cat Ziggy</p>
-         <div class="col-md-7">
-            <h2 class="display-5"> A longer sentence than I initially wrote. </h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-         </div>
-        </div>
-      </div>
-        </div>
-
-      <!-- Contact -->
-      <div class="custom-bg offwhite">
-      <div class="container pt-5 pb-5 mt-5">
-        <div class="row d-flex align-items-center">
-            <div class="col-md-8">
-                <h6 class="fw-bold">CONTACT</h6>
-                <h3 class="display-6 bm-3">Get in touch</h3>
-              
-                <p>Fill in the form below and I look forward to hearing from you!</p>
-
-        <form class="w-75">
-
-                <div class="md-3">
-                <input type="text" class="form-control" placeholder="Name" name="name" required>
         
-                <div class="md-3">
-                    <input type="email" class="form-control" placeholder="Email" name="email" required>
-                </div>
-                <div class="md-3">
-                     <textarea class="form-control" placeholder="Messgae" rows="4" required> </textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Submit</button>
-
-        </form>
-
-                </div>
-                <div class="col-md-4>">
-                    <h5>Social - links find me on this space.</h5>
-                </div>
-                </div>
-                </div>           
-                </div>
-            </div>
-        </div>
+      <div id="Para1" class="col-md-6">
+        <h2 class="display 1"> A longer sentence than I initially wrote. </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni est, laboriosam dolorem error reprehenderit ullam aliquid magnam facilis quae, earum excepturi! Excepturi sequi corporis quas qui voluptatum rerum, libero delectus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni numquam. Exercitationem, possimus aperiam! Deleniti totam itaque culpa reiciendis est illo fuga harum autem quo perspiciatis. Sed illo cumque, nobis itaque ipsum nisi placeat debitis tempore sequi eius nam odit.</p>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </div>
+  </div>
+  </secton>
+
+  <!-- Embedded Audio File --> 
+  
+  <div class="container mt-4 p-5 g-2">
+  <div class="row align-items-center justify-content-center text-center">
+    <div class="col-md">
+      <h2 class="pb-4">Another Paragraph</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos laudantium totam. Similique, illo, tempora maxime molestiae autem a quibusdam, cupiditate eligendi blanditiis excepturi quidem! Quia fugiat quibusdam nesciunt eaque, amet velit, dolore numquam sequi ratione rem dignissimos nam nemo!</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam obcaecati, ad optio aliquid numquam similique suscipit nostrum velit fuga porro animi maxime quas molestias cum voluptates nisi sapiente doloribus! Exercitationem eveniet, quibusdam atque similique iure aliquid omnis fugit aspernatur!</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum molestias similique doloremque voluptatibus consequatur?</p>
+    </div>
+    <div class="col-md mb-2" id="video">
+      <h2>Video</h2>
+      <iframe class="align-items-center" width="480" height="300" src="https://www.youtube.com/embed/EfM3GQOYchc?si=iyOeef1fNlWFtbp4&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+  
+  <!--Skills & Tools-->
+  
+  <div id="Skills" class="container mt-5 p-md-4 border-dark">
+    <div class="row">
+      <div class="col d-flex justify-content-center border-top border-dark">
+        <h2>Skills & Tools</h2>
+      </div>
+    </div>
+  </div>
+
+<section class="p-5">
+  <div class="container">
+      <div class="row text-center g-4">
+          <div class="col-md">
+              <div class="card bg-dark text-light">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3"> 
+                      <i class="bi bi-code-slash"></i>
+                      </div>
+                      <h3 class="card-title mb-3">HTML</h3>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                          Corporis doloribus possimus quidem harum nemo atque.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+              <div class="card bg-secondary text-light">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3"> 
+                      <i class="bi bi-brush"></i>
+                      </div>
+                      <h3 class="card-title mb-3">CSS</h3>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                          Corporis doloribus possimus quidem harum nemo atque.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md">
+              <div class="card bg-dark text-light">
+                  <div class="card-body text-center">
+                      <div class="h1 mb-3"> 
+                      <i class="bi bi-braces"></i>
+                      </div>
+                      <h3 class="card-title mb-3">JavaScript</h3>
+                      <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                          Corporis doloribus possimus quidem harum nemo atque.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Add in a JavaScript Project -->
+
+    <section class="p-5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md my-3">
+              <h2>Javascript Projects</h2>
+            <a href="Calculator/calc-index.html" class="text-white "><i class="bi bi-calculator"></i> <h5>Calculator App</h5> </a>
+            <a href="Dice-Roller/index.html" class="text-white "><i class="bi bi-dice-4"></i> <h5>Dice Roller<h5> </a>
+            <a href="Etch-A-Sketch/index.html" class="text-white "><i class="bi bi-easel-fill"></i> <h5>etch-a-sketch</h5> </a>
+            <a href="weatherApp/index.html" class="text-white "><i class="bi bi-cloud"></i> <h5>Weather App</h5> </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+      <!-- Contact -->
+
+
+      <section id="Contact" class="bg-secondary px-5 py-3">
+      <div class="container mt-5 text-light">
+        <div class="row d-flex">
+
+            <div class="col-md-8">
+                <h6 class="fw-bold">CONTACT</h6>
+                <h3 class="display-6 mb-4">Get in touch</h3>
+                <p>Fill in the form below and I look forward to hearing from you!</p>
+        <form name = "contact-form" class="w-75 mb-5">
+                <div class="md-3">
+                    <input type="text" class="form-control" placeholder="Name" name="name" >
+                    <p id ='name-error'>Please enter your name</p>
+                </div>
+
+                <div class="md-3">
+                    <input type="email" class="form-control" placeholder="email" name="email" >
+                    <p id ='email-error'>Please enter your email address</p>
+                </div>
+
+                <div class="d-md-9">
+                     <textarea class="form-control" placeholder="Message" name ="message" rows="4" > </textarea>
+                     <p id ='message-error'>Leave a message... if you want o.o</p>
+                </div>
+
+                <button type="submit" cursor="pointer" class="btn btn-primary">Submit</button>
+                <p id = "thanks-message"></p>
+        </form>
+          </div>
+
+              <!-- Social Links -->
+            
+            <div class="col-md pb-3 text-center">
+              <h6 class="fw-bold mb-4">SOCIAL LINKS</h6>
+              <p>My social media profiles</p>
+              <div class="card text-center bg-dark text-light"> <!-- make card body responsive on smaller screens -->
+                <div class="card-body">
+                  <img src="https://source.unsplash.com/random/200x200?sig=1" class="rounded-circle w-15 h-15 img-fluid"/>
+                  <h5 class="card-title"> Catherine Devlin</h5>
+                  <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde nesciunt hic voluptatem fugiat enim temporibus recusandae totam excepturi maiores nemo!</p>
+                  <a href="#"><i class="bi bi-twitter mx-1"></i></a>
+                  <a href="#"><i class="bi bi-linkedin mx-1"></i></a>
+                  <a href="#"><i class="bi bi-github mx-1"></i></a>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+          </div>           
+        </section>
+       
+        
+      <script src = "script.js"></script>
   </body>
 </html>
