@@ -71,8 +71,6 @@ function handleKey(e){
     }
 }
 
-
-
 //listen for press our keys
 window.addEventListener('keydown', handleKey);
 shakeButton.addEventListener('click', clearCanvas);

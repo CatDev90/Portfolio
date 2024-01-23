@@ -7,11 +7,13 @@
 
 canvas{
     border: 30px solid rgb(174, 2, 34);
+    border-bottom: 90px solid rgb(174, 2, 34);
     border-radius: 20px;
     background:rgb(36, 36, 36);
     width: 800px;
-    height: 500px;
+    height: 550px;
 }
+
 
 button.shake{
     border-radius: 10%;
