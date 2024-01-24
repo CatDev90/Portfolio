@@ -1,9 +1,16 @@
 #container{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    align-items: center;
     font-size: 2rem;
     font-weight: bold;
+}
 
+body{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #1e7290, #23d5ab);
+    background-size: 150% 150%;
+    animation: gradient 20s ease infinite;
+    height: 100vh;
 }
 
 button{
@@ -30,4 +37,6 @@ input{
     width: 150px;
     text-align: center;
     font-weight: bold;
+   margin-top: 100px;
 }
+
