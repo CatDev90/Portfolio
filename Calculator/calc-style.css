@@ -3,8 +3,10 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #1e7290, #23d5ab);
+    background-size: 150% 150%;
+    animation: gradient 20s ease infinite;
     height: 100vh;
-    background-color: rgb(87, 86, 86);
 }
 
 #calculator{
@@ -13,6 +15,7 @@ body{
   border-radius: 15px;
   max-width: 500px;
   overflow: hidden;
+  box-shadow: black 0px 0px 10px 5px;
 }
 
 #display{
