@@ -46,6 +46,13 @@
 	color: var(--bs-heading-color);
 }
 
+#ziggy{
+	margin-bottom: 1rem;
+	font-weight: 500;
+	line-height: 1.2;
+	border-radius: 20px;
+}
+
 iframe{
 	border-radius: 25px;
 	max-width: 600px;
@@ -59,7 +66,7 @@ iframe{
 body {
 	align-items:flex-start;
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-	background-size: 1500% 1500%;
+	background-size: 3000% 3000%;
 	animation: gradient 15s ease infinite;
 	height: 100vh;
 }
