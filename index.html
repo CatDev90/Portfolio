@@ -44,7 +44,7 @@
       </div> 
 
       <div class="row">
-        <div class="col-md-6 pt-2">
+        <div class="col-md-6 pt-2 col-sm-12">
         <img src="Ziggy.jpg" class="img-fluid" alt="My cat" id="ziggy">
         </div>
         
@@ -57,27 +57,30 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni numquam. Exercitationem, possimus aperiam! Deleniti totam itaque culpa reiciendis est illo fuga harum autem quo perspiciatis. Sed illo cumque, nobis itaque ipsum nisi placeat debitis tempore sequi eius nam odit.</p>
       </div>
     </div>
-
+    
   </div>
-  </div>
-  </secton>
+</div>
+</secton>
 
-  <!-- Embedded Audio File --> 
-  
-  <div class="container mt-4 p-5 g-2">
+<!-- Embedded Audio File --> 
+
+<div class="container mt-4 p-5 g-2">
   <div class="row align-items-center justify-content-center text-center">
     <div class="col-md">
       <h2 class="pb-4">Another Paragraph</h2>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dignissimos laudantium totam. Similique, illo, tempora maxime molestiae autem a quibusdam, cupiditate eligendi blanditiis excepturi quidem! Quia fugiat quibusdam nesciunt eaque, amet velit, dolore numquam sequi ratione rem dignissimos nam nemo!</p>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit aliquam obcaecati, ad optio aliquid numquam similique suscipit nostrum velit fuga porro animi maxime quas molestias cum voluptates nisi sapiente doloribus! Exercitationem eveniet, quibusdam atque similique iure aliquid omnis fugit aspernatur!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum molestias similique doloremque voluptatibus consequatur?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur modi consequuntur tempora unde placeat iure omnis corrupti cum libero eligendi numquam ea, commodi distinctio? Culpa in sed, tenetur nam aspernatur a! Culpa asperiores iure animi inventore, doloremque ipsa veritatis velit alias obcaecati.</p>
     </div>
-    <div class="col-md mb-2" id="video">
+  </div>
+  <div class="row align-items-center justify-content-center text-center">
+    <div class="col-md col-sm-12" id="video">
       <h2 class="my-3">Video</h2>
       <iframe class="align-items-center" width="480" height="300" src="https://www.youtube.com/embed/EfM3GQOYchc?si=iyOeef1fNlWFtbp4&amp;start=16" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
+  </div>
 </div>
-</div>
+
   
   <!--Skills & Tools-->
   
@@ -149,7 +152,23 @@
           </div>
         </div>
       </div>
+
     </section>
+
+    <!-- jQuery AJAX -->
+      <div id="change">
+        <h2>Ajax that changes content</h2>
+    </div>
+
+        <button>Get external content</button>
+
+        <script>
+            $(document).ready(function(){
+                $("button").click(function(){
+                    $("#change").load("text-file.txt")
+                });
+            });
+        </script>
     
       <!-- Contact -->
 
@@ -168,7 +187,7 @@
                 </div>
 
                 <div class="md-3">
-                    <input type="email" class="form-control" placeholder="email" name="email" >
+                    <input type="email" class="form-control" placeholder="email" name="email" required >
                     <p id ='email-error'>Please enter your email address</p>
                 </div>
 
@@ -203,7 +222,16 @@
           </div>           
         </section>
        
+        <h1>Web Worker Demo</h1>
+    <p>Works in Chrome, Safari, and Firefox. Web worker portion works in Opera.</p>
+    <p>Use arrow keys to change the direction of the animated square. The square is animated with <em>requestAnimationFrame</em>.</p>
+    <p>Click the button below to start or stop the worker.</p>
+    <div><input type="button" value="start worker" id="toggleWorker" /></div>
+    <h2>Messages from Worker:</h2>
+    <div id="status"></div>
+    <div id="square"></div>
         
+        <script src="worker-main.js"></script>
         <script src = "script.js"></script>
         <!-- jQuery library -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

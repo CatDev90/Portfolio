@@ -79,7 +79,7 @@ function clearError(fieldId){
 
 });
 
-
+//images rotate onClick
 document.getElementById('ziggy').addEventListener('click', function() {
     this.style.transform = this.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)';
 });
