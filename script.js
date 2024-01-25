@@ -83,3 +83,10 @@ function clearError(fieldId){
 document.getElementById('ziggy').addEventListener('click', function() {
     this.style.transform = this.style.transform === 'rotate(180deg)' ? '' : 'rotate(180deg)';
 });
+
+//j.Query
+$(document).ready(function() {
+    $('#toggleButton').click(function() {
+        $('#hiddenText').toggle();
+    });
+});

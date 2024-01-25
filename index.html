@@ -155,20 +155,10 @@
 
     </section>
 
-    <!-- jQuery AJAX -->
-      <div id="change">
-        <h2>Ajax that changes content</h2>
-    </div>
-
-        <button>Get external content</button>
-
-        <script>
-            $(document).ready(function(){
-                $("button").click(function(){
-                    $("#change").load("text-file.txt")
-                });
-            });
-        </script>
+    <!-- AJAX j.Query -->
+    <button id="toggleButton">Toggle Hidden Text</button>
+    <h1 id="hiddenText" style="display: none;">This is a hidden message!</h1>
+    
     
       <!-- Contact -->
 
@@ -231,9 +221,9 @@
     <div id="status"></div>
     <div id="square"></div>
         
+   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="worker-main.js"></script>
         <script src = "script.js"></script>
-        <!-- jQuery library -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
