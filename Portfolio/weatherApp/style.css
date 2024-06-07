@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(hsl(191, 34%, 46%), hsl(207, 65%, 50%));
+    height: 100vh;
+}
+
+.container{
+    align-content: center;
+    width:auto;
+}
+
+.form-inline{
+    margin-top: 30%;
+    margin-bottom: 10%;
+}
+
+.form-control{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section{
+    margin-left: 60px;
+}
+
+
