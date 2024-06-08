@@ -46,6 +46,10 @@
 	color: var(--bs-heading-color);
 }
 
+p{
+	font-size: large;
+}
+
 #ziggy{
 	margin-bottom: 1rem;
 	font-weight: 500;
@@ -55,6 +59,8 @@
 
 #video{
 	margin-top: 40px;
+	width: 100%;
+	max-width: 600px;
 }
 
 #video iframe{
@@ -64,7 +70,6 @@
 
 .offwhite{
 	background-color: rgb(103, 109, 124);
-	max-width: min-content;
 }
 
 body {
@@ -105,7 +110,7 @@ body {
 	}
 }
 
-/* j.Query styling */
+/* j.Query hidden message styling */
 #toggleButton{
 	border-radius: 10px;
 	color: white;

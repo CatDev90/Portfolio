@@ -34,26 +34,28 @@
     <section class="p-5">
         <div class="col-md">
             <img class="img-fluid" src="" id="weather-icon" alt="Icon of current weather">
-        <h1 class="align-text-center" id="temp"></h1>
-        <h2 class="align-text-center" id="description"></h2>
-        </div>
-    </section>
-
-
-        <div class="container">
+        <h1 class="align-text-center text-light" id="temp"></h1>
+        <h2 class="align-text-center text-light" id="description"></h2>
+    
+    
+    <div class="container d-flex">
         <div class="row">
-        <div class = "col-md text-center">
-        <p id="humidity"></p>
-            <img src="" id="humidity-icon" alt="humidity-icon" class="auto">       
-        <p id="wind-speed"></p>
-            <img src="" id="wind-icon" alt="wind-icon" class="auto">
-        </div>        
+            <div class = "col-md text-center" id="align">
+                <p class="text-light pt-5">Humidity</p>
+                <p id="humidity" class="text-light"></p>
+                <img src="" id="wind-icon" alt="wind-icon" class="auto">
+                <p class="text-light pt-5">Wind</p>
+                <p id="wind-speed" class="text-light"></p>
+                <img src="" id="humidity-icon" alt="humidity-icon" class="auto">       
+            </div>        
         </div> 
-        </div>
     </div>
     </div>
+</section>
+</div>
+</div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

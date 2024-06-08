@@ -1,6 +1,6 @@
 let xhr = new XMLHttpRequest(); 
 
-const api = '24071d842a06e795df9575c76ad7b301'; 
+const api = 'da2c6e20adb2e4056a5da39327c3f36f'; 
 
 function getLocation(){
     if (navigator.geolocation){

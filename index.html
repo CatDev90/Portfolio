@@ -7,6 +7,7 @@
     <link href="style.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -49,12 +50,13 @@
         </div>
         
       <div id="Para1" class="col-md-6">
-        <h2 class="display 1"> A longer sentence than I initially wrote. </h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <h2 class="display 1"> About me </h2>
+        <p>I am an aspiring junior developer with a passion for learning. 
+          I have made this porfolio to practice my html, css and javascript. It's currently a working progress and I hope you enjoy what I have done so far! I look forward to hearing your feed back and critque!
+        </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi suscipit qui in, saepe laudantium at, ut, commodi explicabo vitae ea veritatis. Necessitatibus rerum quae cupiditate voluptatibus nam tempore eaque accusantium impedit harum asperiores quos, sapiente reprehenderit, quis minima voluptas. Voluptate.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, magni numquam. Exercitationem, possimus aperiam! Deleniti totam itaque culpa reiciendis est illo fuga harum autem quo perspiciatis. Sed illo cumque, nobis itaque ipsum nisi placeat debitis tempore sequi eius nam odit.</p>
       </div>
     </div>
     
@@ -157,8 +159,21 @@
 
     <!-- AJAX j.Query -->
     <button id="toggleButton">Toggle Hidden Text</button>
-    <h1 id="hiddenText" style="display: none;">This is a hidden message!</h1>
-    
+    <h1 id="hiddenText" ></h1>
+
+    <script>
+    $(document).ready(function(){
+    $("#toggleButton").click(function(){
+      if ($("#hiddenText").is(":visible")) {
+        $("#hiddenText").hide();
+      } else {
+        $("#hiddenText").load("text.txt", function() {
+          $("#hiddenText").show();
+        });
+      }
+    });
+  });
+    </script>
     
       <!-- Contact -->
 
@@ -183,7 +198,7 @@
 
                 <div class="d-md-9">
                      <textarea class="form-control" placeholder="Message" name ="message" rows="4" > </textarea>
-                     <p id ='message-error'>Leave a message... if you want o.o</p>
+                     <p id ='message-error'>Please leave a message!</p>
                 </div>
 
                 <button type="submit" cursor="pointer" class="btn btn-primary">Submit</button>
@@ -200,10 +215,9 @@
                 <div class="card-body">
                   <img src="https://source.unsplash.com/random/200x200?sig=1" class="rounded-circle w-15 h-15 img-fluid"/>
                   <h5 class="card-title"> Catherine Devlin</h5>
-                  <p class="card-text ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde nesciunt hic voluptatem fugiat enim temporibus recusandae totam excepturi maiores nemo!</p>
-                  <a href="#"><i class="bi bi-twitter mx-1"></i></a>
-                  <a href="#"><i class="bi bi-linkedin mx-1"></i></a>
-                  <a href="#"><i class="bi bi-github mx-1"></i></a>
+                  <p class="card-text ">If you want to get in touch through my socials, please click the icon links down below. I look forward to hearing from you!</p>
+                  <a href="https://www.linkedin.com/in/catherine-devlin-8264882b2/"><i class="bi bi-linkedin mx-1"></i></a>
+                  <a href="https://github.com/CatDev90"><i class="bi bi-github mx-1"></i></a>
                 </div>
               </div>
             </div>
@@ -211,19 +225,8 @@
             </div>
           </div>           
         </section>
-       
-        <h1>Web Worker Demo</h1>
-    <p>Works in Chrome, Safari, and Firefox. Web worker portion works in Opera.</p>
-    <p>Use arrow keys to change the direction of the animated square. The square is animated with <em>requestAnimationFrame</em>.</p>
-    <p>Click the button below to start or stop the worker.</p>
-    <div><input type="button" value="start worker" id="toggleWorker" /></div>
-    <h2>Messages from Worker:</h2>
-    <div id="status"></div>
-    <div id="square"></div>
         
    
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="worker-main.js"></script>
         <script src = "script.js"></script>
   </body>
 </html>
